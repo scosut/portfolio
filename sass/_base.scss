@@ -1,0 +1,54 @@
+/* base styling */
+html {
+	font-size: 10px;
+}
+
+body {
+	color: $text-primary;
+	font-family: $font-sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.2;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, em {
+	color: $color-tertiary;
+	font-family: $font-cursive;
+	font-style: normal;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 2.6rem;
+}
+
+em {
+	font-weight: bold;
+}
+
+p {
+	margin-top: 1.5rem;
+	line-height: 1.4;
+}
+
+.container {
+	margin: auto;
+	max-width: 120rem;
+	position: relative;
+}
+
+.default {
+	font-size: 75%;
+}
+
+#resume,
+#event,
+#application,
+#estimator,
+#form,
+#nutrition {
+	display: none;
+}

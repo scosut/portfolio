@@ -1,0 +1,60 @@
+/* about styling */
+#about {
+	background: $background-primary;
+	padding: 1.25rem;
+	position: relative;
+	
+	@include atSmall() {
+		padding: 2.5rem;
+	}
+	
+	@include atMedium() {
+		display: flex;
+		padding: 5rem;
+	}
+	
+	.about-pic {
+		height: auto;
+		left: 50%;
+		margin-top: 1.25rem;
+		position: absolute;
+		top: 2.2rem;			
+		transform: translateX(-50%);
+		
+		@include atSmall() {
+			float: right;
+			height: auto;
+			left: auto;
+			margin: 2.5rem 1.5rem 0 1.5rem;
+			position: static;
+			top: auto;			
+			transform: translateX(0);
+		}
+		
+		@include atMedium() {
+			flex-shrink: 0;
+			margin: -0.6rem 4rem 0 0;
+			float: none;
+		}
+		
+		img {
+			display: block;
+			max-width: 12.6rem;
+			width: 100%;			
+		}
+	}
+	
+	.about-text {
+		background: $background-secondary;
+		box-shadow: $shadow-primary;
+		padding: 2.5rem 3.1rem;
+
+		h3 {
+			margin-top: 12.5rem;
+			
+			@include atSmall() {
+				margin-top: 0;
+			}
+		}
+	}
+}

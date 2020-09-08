@@ -1,0 +1,95 @@
+/* modal styling */
+#modal-outer {
+	background: $background-tertiary;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+	
+	#modal-inner {
+		background: $background-secondary;
+		border: $border-primary;
+		box-shadow: $shadow-primary;
+		left: 50%;
+		height: 90%;
+		max-height: 63rem;
+		max-width: 63rem;
+		opacity: 0;
+		overflow: auto;
+		padding: 3.5rem 2rem;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 90%;
+		
+		@include atSmall() {
+			height: 75%;
+			padding: 3.5rem;
+			width: 75%;
+		}
+
+		#modal-exit {
+			cursor: pointer;
+			height: 1.5rem;
+			position: absolute;
+			right: 0.5rem;
+			top: 0.5rem;
+			width: 1.5rem;
+			
+			img {
+				height: 100%;
+				width: auto;
+			}
+		}
+		
+		#modal-content {
+			img {
+				display: block;
+				margin: auto;
+			}
+			
+			h4 {
+				font-size: 2.6rem;
+				margin: 2rem 0;
+				text-align: center;	
+			}
+			
+			p {
+				font-size: 1.4rem;
+			}
+			
+			p.applied {
+				margin-top: 0.5rem;
+				
+				em {
+					font-family: inherit;
+				}
+			}
+			
+			p.links {
+				align-items: flex-start;
+				display: flex;				
+				justify-content: space-between;
+				
+				a {
+					color: $color-tertiary;
+					display: block;
+					opacity: 0.8;
+					padding-bottom: 0.1rem;	
+					
+					span {
+						border-bottom: $border-link;
+						transition: all 0.5s ease-in-out;
+						
+						&:hover {
+							border-bottom: $border-link-hover;
+						}
+					}
+				}
+			}
+		}
+	}
+}

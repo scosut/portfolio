@@ -1,0 +1,70 @@
+/* header styling */
+#header {
+	min-height: 340px;
+	height: 100vh;
+	position: relative;
+	top: 0;
+	
+	&::before,
+	&::after {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: "";
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+	}
+	
+	&::before {
+		animation: fade-in 5s forwards, fade-out 5s 28s forwards;
+		background-image: $background-header-mobile-dim;
+		opacity: 1;	
+		
+		@include atSmall() {
+			background-image: $background-header-dim;
+		}
+	}
+	
+	&::after {
+		animation: fade-in 5s 23s forwards;
+		background-image: $background-header-mobile-lit;
+		opacity: 0;	
+		
+		@include atSmall() {
+			background-image: $background-header-lit;
+		}
+	}
+	
+	#name-title {
+		animation: move-name-title 5s 12s forwards;
+		left: 50%;
+		padding: 2.5rem;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 20.2rem;
+		
+		h1 {
+			animation: animated-text 4s steps(12,end) 2s 1 normal both, 
+				animated-cursor 600ms steps(12,end) 10 forwards;
+			color: $color-primary;
+			font-size: 3.4rem;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		
+		h2 {
+			animation: animated-text 4s steps(13,end) 6s 1 normal both, 
+				animated-cursor 600ms steps(13,end) 6s 10 forwards;
+			color: $color-secondary;
+			font-size: 2.6rem;
+			overflow: hidden;			
+			white-space: nowrap;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+/* navigation styling */
+#nav {
+	animation: move-nav 6s 17s forwards;
+	left: 50%;
+	opacity: 0;
+	padding: 2.5rem;			
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 11.4rem;
+	z-index: 999;
+	
+	ul {
+		list-style: none;
+		
+		li {
+			margin-top: 2rem;
+			text-align: center;
+			
+			a {
+				color: $nav-text;
+				font-size: 1.8rem;
+				font-variant: small-caps;
+				letter-spacing: 0.1rem;
+				
+				img {
+					display: block;
+					margin: auto;
+				}				
+			}
+		}
+	}
+}

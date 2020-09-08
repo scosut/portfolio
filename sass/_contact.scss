@@ -1,0 +1,28 @@
+/* contact styling */
+#contact {
+	align-items: center;
+	background: $background-primary;
+	display: flex;
+	flex-direction: column;	
+	height: 18rem;
+	justify-content: center;
+	padding: 0 2rem;
+	position: relative;	
+	
+	.footer-wrapper {
+		text-align: center;
+		
+		p {
+			font-size: 1.8rem;
+			margin-bottom: 1.9rem;
+		}
+		
+		.social-icons a {
+			display: inline-block;
+			
+			&:nth-child(2) {
+				margin: 0 1.8rem;
+			}
+		}
+	}
+}

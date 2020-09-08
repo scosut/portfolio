@@ -1,0 +1,27 @@
+/* up styling */
+#up {
+	position: fixed;
+	
+	a {
+		display: block;
+		
+		&:hover + span {
+			opacity: 1;
+		}
+	}
+	
+	span {
+		bottom: 3.3rem;
+		color: $color-tertiary;
+		display: block;
+		font-family: $font-cursive;
+		font-size: 1.6rem;
+		font-weight: bold;
+		line-height: 1.1;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		transition: all 0.5s ease-in-out;
+	}
+}

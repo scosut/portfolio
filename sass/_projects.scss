@@ -1,0 +1,141 @@
+/* projects styling */
+#projects {
+	margin: auto;
+	max-width: 60rem;
+	padding: 5rem 0;
+	
+	@include atMedium() {
+		max-width: 90rem;
+	}
+	
+	h3 {
+		text-align: center;
+	}
+	
+	.card-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		
+		.card {
+			padding-top: 4rem;
+			width: 100%;
+			
+			@include atSmall() {
+				width: 50%;
+			}
+			
+			@include atMedium() {
+				width: 33.33%;
+			}
+			
+			.card-side {
+				backface-visibility: hidden;
+				height: 23.4rem;
+				margin: auto;
+				position: relative;
+				width: 22.4rem;
+				
+				.card-side-front,
+				.card-side-back {
+					background: $background-secondary;
+					border: $border-primary;
+					box-shadow: $shadow-primary;
+					height: 100%;
+					left: 0;
+					position: absolute;
+					top: 0;
+					transition: all 1s ease-in-out;
+					width: 100%;
+				}
+				
+				.card-side-front {
+					opacity: 1;
+					transform: rotateY(0deg);
+					
+					img {
+						display: block;
+						left: 50%;
+						position: absolute;
+						top: 50%;
+						transform: translate(-50%, -50%);
+					}
+					
+					h4 {
+						bottom: 0;
+						font-family: $font-sans-serif;
+						font-size: 2.2rem;
+						font-variant: small-caps;
+						left: 0;
+						letter-spacing: 0.1rem;
+						position: absolute;
+						text-align: center;
+						width: 100%;
+					}
+				}
+				
+				.card-side-back {
+					opacity: 0;
+					transform: rotateY(180deg);
+					
+					ul {
+						display: inline-block;
+						left: 50%;
+						list-style: none;
+						position: absolute;
+						top: 50%;
+						transform: translate(-50%, -50%);
+						
+						li {
+							color: $color-tertiary;
+							line-height: 1.4;
+							padding-left: 15px;
+							position: relative;
+							
+							&::before {
+								background: $background-bullet;
+								content: "";
+								height: 1rem;
+								left: 0;
+								opacity: 0.7;
+								position: absolute;
+								top: 0.4rem;
+								width: 0.7rem;
+							}							
+						}
+					}
+					
+					a {
+						bottom: 0.3rem;
+						color: $color-tertiary;
+						display: block;
+						opacity: 0.8;
+						padding-bottom: 0.1rem;
+						position: absolute;
+						right: 0.5rem;
+
+						span {
+							border-bottom: $border-link;
+							transition: all 0.5s ease-in-out;
+
+							&:hover {
+								border-bottom: $border-link-hover;
+							}
+						}
+					}
+				}
+				
+				&:hover {
+					.card-side-front {
+						opacity: 0;
+						transform: rotateY(-180deg);
+					}
+					
+					.card-side-back {
+						opacity: 1;
+						transform: rotateY(0deg);
+					}
+				}
+			}
+		}
+	}
+}

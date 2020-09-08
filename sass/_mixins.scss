@@ -1,0 +1,11 @@
+@mixin atSmall {
+  @media print, screen and (min-width: $width-small) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media print, screen and (min-width: $width-medium) {
+    @content;
+  }
+}
