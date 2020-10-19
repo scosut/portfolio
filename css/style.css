@@ -57,7 +57,8 @@ p {
 #application,
 #estimator,
 #form,
-#nutrition {
+#nutrition,
+#post {
   display: none;
 }
 
