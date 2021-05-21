@@ -30,6 +30,23 @@
 			padding: 3.5rem;
 			width: 75%;
 		}
+		
+		&::-webkit-scrollbar {
+			border-radius: 1.7rem;
+			width: 1.5rem;
+			
+			&-track {
+				background: $background-secondary;
+  			border-radius: 1.7rem;
+			}
+			
+			&-thumb {
+				background: rgba($background-primary, 0.5);
+				border: 0.5rem solid $background-secondary;
+				border-radius: 1.25rem;
+				width: 2rem;
+			}
+		}
 
 		#modal-exit {
 			cursor: pointer;

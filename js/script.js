@@ -7,7 +7,7 @@
 		el.style.animation = animator + " 3s ease-in-out forwards";
 	}
 
-	function toggleModal(str, e) {
+	function toggleModal(str, e) {	
 		e.preventDefault();
 
 		var el      = document.getElementById(str);
@@ -16,7 +16,7 @@
 		var content = document.getElementById("modal-content");
 
 		if (str == "exit") {
-			inner.style.animation = "fade-out 1s ease-in-out forwards";				
+			inner.style.animation = "fade-out 1s ease-in-out forwards";
 
 			setTimeout(function() {
 				outer.style.animation = "fade-out 3s ease-in-out forwards";
@@ -63,13 +63,14 @@
 	}
 	
 	function events() {
-		var about    = document.getElementById("about");
-		var projects = document.getElementById("projects");
-		var contact  = document.getElementById("contact");
-		var up       = document.getElementById("up");
-		var exit     = document.getElementById("modal-exit");
-		var backs    = document.querySelectorAll(".card-side-back a");
-		var links    = document.querySelectorAll("#nav a, #up a");
+		var about      = document.getElementById("about");
+		var projects   = document.getElementById("projects");
+		var contact    = document.getElementById("contact");
+		var up         = document.getElementById("up");
+		var exit       = document.getElementById("modal-exit");
+		var backs      = document.querySelectorAll(".card-side-back a");		
+		var links      = document.querySelectorAll("#nav a, #up a");
+		var modalOuter = document.getElementById("modal-outer");
 
 		var arr = [about, projects, contact, up];
 
@@ -85,6 +86,12 @@
 			a.addEventListener("click", toggleModal.bind(this, a.getAttribute("data-target")));
 		});
 		
+		modalOuter.addEventListener("click", function(e) {
+			if (e.target.id === 'modal-outer') {
+				toggleModal("exit", e);
+			}
+		});
+		 
 		arr = Array.prototype.slice.call(links);
 		
 		arr.forEach(function(a) {
