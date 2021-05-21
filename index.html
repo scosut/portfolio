@@ -20,19 +20,19 @@
 				<ul>
 					<li>
 						<a href="#about">
-							<img src="/img/icons/navigation/about.png">
+							<img src="/img/icons/navigation/about.png" alt="About">
 							about
 						</a>
 					</li>
 					<li>
 						<a href="#projects">
-							<img src="/img/icons/navigation/projects.png">
+							<img src="/img/icons/navigation/projects.png" alt="Projects">
 							projects
 						</a>
 					</li>
 					<li>
 						<a href="#contact">
-							<img src="img/icons/navigation/contact.png">
+							<img src="img/icons/navigation/contact.png" alt="Contact">
 							contact
 						</a>
 					</li>
@@ -81,47 +81,7 @@
 								<li>Ruby</li>
 								<li>Sinatra</li>
 							</ul>
-							<a href="#" data="resume"><span>learn more</span> &rArr;</a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="card">
-					<div class="card-side">
-						<div class="card-side-front">
-							<img src="/img/icons/project/event.png" alt="event planner">
-							<h4>event planner</h4>
-						</div>
-						<div class="card-side-back">
-							<ul>
-								<li>HTML5</li>
-								<li>CSS3</li>
-								<li>SASS</li>
-								<li>JavaScript</li>
-								<li>PHP</li>
-								<li>MySQL</li>
-							</ul>
-							<a href="#" data="event"><span>learn more</span> &rArr;</a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="card">
-					<div class="card-side">
-						<div class="card-side-front">
-							<img src="/img/icons/project/application.png" alt="membership application">
-							<h4>membership application</h4>							
-						</div>
-						<div class="card-side-back">
-							<ul>
-								<li>HTML5</li>
-								<li>CSS3</li>
-								<li>SASS</li>
-								<li>JavaScript</li>
-								<li>PHP</li>
-								<li>MySQL</li>
-							</ul>
-							<a href="#" data="application"><span>learn more</span> &rArr;</a>
+							<a href="#" data-target="resume"><span>learn more</span> &rArr;</a>
 						</div>
 					</div>
 				</div>
@@ -141,7 +101,46 @@
 								<li>Ruby</li>
 								<li>Sinatra</li>
 							</ul>
-							<a href="#" data="estimator"><span>learn more</span> &rArr;</a>
+							<a href="#" data-target="estimator"><span>learn more</span> &rArr;</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div class="card-side">
+						<div class="card-side-front">
+							<img src="/img/icons/project/event.png" alt="event planner">
+							<h4>event planner</h4>
+						</div>
+						<div class="card-side-back">
+							<ul>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>SASS</li>
+								<li>JavaScript</li>
+								<li>PHP</li>
+								<li>MySQL</li>
+							</ul>
+							<a href="#" data-target="event"><span>learn more</span> &rArr;</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div class="card-side">
+						<div class="card-side-front">
+							<img src="/img/icons/project/rent.png" alt="property management">
+							<h4>property management</h4>
+						</div>
+						<div class="card-side-back">
+							<ul>
+								<li>HTML5</li>
+								<li>Bootstrap</li>
+								<li>JQuery</li>
+								<li>PHP</li>
+								<li>MySQL</li>
+							</ul>
+							<a href="#" data-target="rent"><span>learn more</span> &rArr;</a>
 						</div>
 					</div>
 				</div>
@@ -161,27 +160,7 @@
 								<li>Python</li>
 								<li>Django</li>
 							</ul>
-							<a href="#" data="form"><span>learn more</span> &rArr;</a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="card">
-					<div class="card-side">
-						<div class="card-side-front">
-							<img src="/img/icons/project/nutrition.png" alt="health and wellness">
-							<h4>health <span class="default">&amp;</span> wellness</h4>
-						</div>
-						<div class="card-side-back">
-							<ul>
-								<li>HTML5</li>
-								<li>CSS3</li>
-								<li>SASS</li>
-								<li>JavaScript</li>
-								<li>PHP</li>
-								<li>WordPress</li>
-							</ul>
-							<a href="#" data="nutrition"><span>learn more</span> &rArr;</a>
+							<a href="#" data-target="form"><span>learn more</span> &rArr;</a>
 						</div>
 					</div>
 				</div>
@@ -200,29 +179,10 @@
 								<li>PHP</li>
 								<li>MySQL</li>
 							</ul>
-							<a href="#" data="post"><span>learn more</span> &rArr;</a>
+							<a href="#" data-target="post"><span>learn more</span> &rArr;</a>
 						</div>
 					</div>
-				</div>
-				
-				<div class="card">
-					<div class="card-side">
-						<div class="card-side-front">
-							<img src="/img/icons/project/rent.png" alt="property management">
-							<h4>property management</h4>
-						</div>
-						<div class="card-side-back">
-							<ul>
-								<li>HTML5</li>
-								<li>Bootstrap</li>
-								<li>JQuery</li>
-								<li>PHP</li>
-								<li>MySQL</li>
-							</ul>
-							<a href="#" data="rent"><span>learn more</span> &rArr;</a>
-						</div>
-					</div>
-				</div>
+				</div>				
 			</div>
 		</section>
 		
@@ -252,7 +212,7 @@
 	
 	<div id="modal-outer">
 		<div id="modal-inner">
-			<div id="modal-exit" data="exit">
+			<div id="modal-exit" data-target="exit">
 				<img src="/img/icons/modal/exit.png" alt="exit">
 			</div>
 			
@@ -272,33 +232,7 @@
 			<a href="http://github.com/scosut/resume-builder" target="_blank"><span>view code</span> &rArr;</a>
 		</p>
 	</div>
-
-	<div id="event">
-		<img src="/img/icons/modal/event.png" alt="event planner">
-		<h4>Event Planner</h4>
-		<p>This application improves the method of organizing a group trip. Original process required event coordinator create seating chart, place cards, and table tents from scratch using word processing program. New process has coordinator enter list of participant names and assign seating graphically from which essential documents are dynamically generated. List can be modified at any time.</p>
-		
-		<p class="applied"><em>Applied Technologies:</em> PHP and MySQL support CRUD operations. MVC architecture provides file structure. Third-party API implemented for PDF rendering. JavaScript offers GUI for seat assignment.</p>
-		
-		<p class="links">
-			<a href="http://event.projectsbyscott.com" target="_blank"><span>view demo</span> &rArr;</a>
-			<a href="http://github.com/scosut/event-planner" target="_blank"><span>view code</span> &rArr;</a>
-		</p>
-	</div>
-
-	<div id="application">
-		<img src="/img/icons/modal/application.png" alt="membership application">
-		<h4>Membership Application</h4>
-		<p>This application improves the method of joining the business club at a college. Original process required student complete application by hand, deliver in&#8209;person to advisor for signature, and deliver in&#8209;person to cashier for handling. New process has visitors complete online application, which is automatically routed to  advisor for approval followed by cashier's office for payment processing. All parties able to track application progress via online dashboards.</p>
-		
-		<p class="applied"><em>Applied Technologies:</em> PHP and MySQL support CRUD operations, user authentication, and user&#8209;specific template rendering. MVC architecture provides file structure. JavaScript displays conditional form elements.</p>
-		
-		<p class="links">
-			<a href="http://apply.projectsbyscott.com" target="_blank"><span>view demo</span> &rArr;</a>
-			<a href="http://github.com/scosut/membership-application" target="_blank"><span>view code</span> &rArr;</a>
-		</p>
-	</div>
-
+	
 	<div id="estimator">
 		<img src="/img/icons/modal/estimator.png" alt="cost estimator">
 		<h4>Cost Estimator</h4>
@@ -312,12 +246,38 @@
 		</p>
 	</div>
 
+	<div id="event">
+		<img src="/img/icons/modal/event.png" alt="event planner">
+		<h4>Event Planner</h4>
+		<p>This application improves the method of organizing a group trip. Original process required event coordinator create seating chart, place cards, and table tents from scratch using word processing program. New process has coordinator enter list of participant names and assign seating graphically from which essential documents are dynamically generated. List can be modified at any time.</p>
+		
+		<p class="applied"><em>Applied Technologies:</em> PHP and MySQL support CRUD operations. MVC architecture provides file structure. Third-party library implemented for PDF rendering. JavaScript offers GUI for seat assignment.</p>
+		
+		<p class="links">
+			<a href="http://event.projectsbyscott.com" target="_blank"><span>view demo</span> &rArr;</a>
+			<a href="http://github.com/scosut/event-planner" target="_blank"><span>view code</span> &rArr;</a>
+		</p>
+	</div>
+	
+	<div id="rent">
+		<img src="/img/icons/modal/rent.png" alt="property management">
+		<h4>Property Management</h4>
+		<p>This application improves the method of managing rentals for a landlord. Original process required landlord post vacancies on multiple classified advertisement websites. Prospective tenants then contact landlord by telephone to schedule showings or complete the paper-based rental application. New process offers landlord a graphical user interface to upload new listings and applicants a web&#8209;based form to complete. All parties are notified by email when application is submitted. Landlord can view and export submitted data from password-protected dashboard.</p>
+		
+		<p class="applied"><em>Applied Technologies:</em> PHP and MySQL support CRUD operations, user authentication, form validation, SMTP mail, and custom template rendering. MVC architecture provides file structure. Third-party libraries implemented for PDF and Excel rendering. JQuery performs animations, displays conditional form elements, and executes AJAX requests.</p>
+		
+		<p class="links">
+			<a href="http://rent.projectsbyscott.com" target="_blank"><span>view demo</span> &rArr;</a>
+			<a href="http://github.com/scosut/hh-properties" target="_blank"><span>view code</span> &rArr;</a>
+		</p>
+	</div>
+
 	<div id="form">
 		<img src="/img/icons/modal/form.png" alt="form generator">
 		<h4>Form Generator</h4>
-		<p>This application improves the method of managing customer orders. Original process entailed seller building a fillable PDF document, forwarding the document to the customer as an email attachment, then transferring all responses to a spreadsheet for further analysis. Seller must be comfortable with Acrobat forms and Excel to be successful. New process asks seller to complete an online form, which automatically generates a new order form and issues a link to the new form by email to the appropriate customer. All customer responses can be downloaded and compiled from a single call to action. Success is not dependent on software familiarity.</p>
+		<p>This application improves the method of managing customer orders. Original process entailed seller building a fillable form and forwarding to the customer as an email attachment. The customer performs a similar process to return the completed form to the seller. The seller then transfers all form data to a spreadsheet for further analysis. New process has seller complete an online form, which automatically generates a new order form, whose link is sent by email to the customer to place an online order. All orders can be downloaded and compiled from a single call to action initiated by the seller.</p>
 		
-		<p class="applied"><em>Applied Technologies:</em> Python and Django support CRUD operations. MVT architecture provides file structure. Third-party API implemented for Excel rendering. JavaScript performs navigation and AJAX posts. Unit testing on view and model methods.</p>
+		<p class="applied"><em>Applied Technologies:</em> Python and Django support CRUD operations. MVT architecture provides file structure. Third-party library implemented for Excel rendering. JavaScript performs navigation and AJAX requests. Unit testing on view and model methods.</p>
 		
 		<p class="links">
 			<a href="http://form.projectsbyscott.com" target="_blank"><span>view demo</span> &rArr;</a>
@@ -325,44 +285,18 @@
 		</p>
 	</div>
 
-	<div id="nutrition">
-		<img src="/img/icons/modal/nutrition.png" alt="health and wellness">
-		<h4>Health &amp; Wellness</h4>
-		<p>This application improves the method of creating and maintaining content by a website owner. Original process required owner obtain front&#8209;end development skills or hire capable party to update static pages. New process offers interface that accepts raw text and automatically assigns proper formatting based on design selected.</p>
-		
-		<p class="applied"><em>Applied Technologies:</em> CMS framework using PHP and WordPress. Custom theme, post type, and contact form extend default features. Third-party API implemented for Excel rendering. JavaScript performs navigation, animations, form validation, and modal popups.</p>
-		
-		<p class="links">
-			<a href="http://health.projectsbyscott.com" target="_blank"><span>view demo</span> &rArr;</a>
-			<a href="http://github.com/scosut/health-wellness" target="_blank"><span>view code</span> &rArr;</a>
-		</p>
-	</div>
-	
 	<div id="post">
 		<img src="/img/icons/modal/post.png" alt="share posts">
 		<h4>Share Posts</h4>
 		<p>This application improves the method of maintaining a multiple&#8209;page posting platform. By pairing a front&#8209;end framework with back&#8209;end APIs, the overall page count is reduced to a single entity.</p>
 		
-		<p class="applied"><em>Applied Technologies:</em> PHP and MySQL support CRUD operations, user authentication, and user&#8209;specific actions. Bootstrap provides styling. React with hooks performs navigation, data feeds, AJAX posts, conditional component rendering, and establishes user interface.</p>
+		<p class="applied"><em>Applied Technologies:</em> PHP and MySQL support CRUD operations, user authentication, and user&#8209;specific actions. Bootstrap provides styling. React with hooks performs navigation, data feeds, AJAX requests, conditional component rendering, and establishes user interface.</p>
 		
 		<p class="links">
 			<a href="http://post.projectsbyscott.com" target="_blank"><span>view demo</span> &rArr;</a>
 			<a href="http://github.com/scosut/share-posts-fe" target="_blank"><span>view code</span> &rArr;</a>
 		</p>
-	</div>
-	
-	<div id="rent">
-		<img src="/img/icons/modal/rent.png" alt="property management">
-		<h4>Property Management</h4>
-		<p>This application improves the method of managing rentals for a landlord. Original process required landlord post vacancies on multiple classified advertisement websites. Prospective tenants then contact landlord by telephone to schedule showings or complete the paper-based rental application. New process offers landlord a graphical user interface to upload new listings and applicants a web-based form to complete. All parties are notified by email when application is submitted. Landlord can view and export submitted data from password-protected dashboard.</p>
-		
-		<p class="applied"><em>Applied Technologies:</em> PHP and MySQL support CRUD operations, user authentication, form validation, and custom template rendering. MVC architecture provides file structure.  JQuery performs animations, displays conditional form elements, and executes AJAX posts.</p>
-		
-		<p class="links">
-			<a href="http://rent.projectsbyscott.com" target="_blank"><span>view demo</span> &rArr;</a>
-			<a href="http://github.com/scosut/hh-properties" target="_blank"><span>view code</span> &rArr;</a>
-		</p>
-	</div>
+	</div>	
 	
 	<script src="/js/script.js"></script>
 </body>

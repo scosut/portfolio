@@ -82,7 +82,7 @@
 		arr.push(exit);
 
 		arr.forEach(function(a) {
-			a.addEventListener("click", toggleModal.bind(this, a.getAttribute("data")));
+			a.addEventListener("click", toggleModal.bind(this, a.getAttribute("data-target")));
 		});
 		
 		arr = Array.prototype.slice.call(links);
