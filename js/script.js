@@ -16,25 +16,25 @@
 		var content = document.getElementById("modal-content");
 
 		if (str == "exit") {
-			inner.style.animation = "fade-out 1s ease-in-out forwards";
+			inner.style.animation = "fade-out 1s ease forwards";
 
 			setTimeout(function() {
-				outer.style.animation = "fade-out 3s ease-in-out forwards";
-			}, 1000);
+				outer.style.animation = "fade-out 1s ease forwards";
+			}, 500);
 			
 			setTimeout(function() {
 				content.innerHTML = "";
 				outer.style.zIndex = "-1";
-			}, 4000);
+			}, 1000);
 		}
 		else {
 			outer.style.zIndex = "1";
 			content.innerHTML = el.innerHTML;
-			outer.style.animation = "fade-in 1s ease-in-out forwards";
+			outer.style.animation = "fade-in 1s ease forwards";
 
 			setTimeout(function() {
-				inner.style.animation = "fade-in 3s ease-in-out forwards";
-			}, 1000);
+				inner.style.animation = "fade-in 1s ease forwards";
+			}, 500);
 		}
 	}
 	

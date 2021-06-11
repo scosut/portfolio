@@ -21,7 +21,7 @@
 	}
 	
 	&::before {
-		animation: fade-in 5s forwards, fade-out 5s 28s forwards;
+		animation: fade-in 3s forwards, fade-out 3s 14s forwards;
 		background-image: $background-header-mobile-dim;
 		opacity: 1;	
 		
@@ -31,7 +31,7 @@
 	}
 	
 	&::after {
-		animation: fade-in 5s 23s forwards;
+		animation: fade-in 3s 11s forwards;
 		background-image: $background-header-mobile-lit;
 		opacity: 0;	
 		
@@ -41,7 +41,7 @@
 	}
 	
 	#name-title {
-		animation: move-name-title 5s 12s forwards;
+		animation: move-name-title 3s 5.5s forwards;
 		left: 50%;
 		padding: 2.5rem;
 		position: absolute;
@@ -50,8 +50,8 @@
 		width: 20.2rem;
 		
 		h1 {
-			animation: animated-text 4s steps(12,end) 2s 1 normal both, 
-				animated-cursor 600ms steps(12,end) 10 forwards;
+			animation: animated-text 2s steps(12,end) 1s 1 normal both, 
+				animated-cursor 300ms steps(12,end) 8 forwards;
 			color: $color-primary;
 			font-size: 2.9rem;
 			overflow: hidden;
@@ -59,8 +59,8 @@
 		}
 		
 		h2 {
-			animation: animated-text 4s steps(13,end) 6s 1 normal both, 
-				animated-cursor 600ms steps(13,end) 6s 10 forwards;
+			animation: animated-text 2s steps(13,end) 3s 1 normal both, 
+				animated-cursor 300ms steps(13,end) 3s 8 forwards;
 			color: $color-secondary;
 			font-size: 2.2rem;
 			overflow: hidden;			

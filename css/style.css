@@ -234,8 +234,8 @@ p {
 }
 
 #header::before {
-  -webkit-animation: fade-in 5s forwards, fade-out 5s 28s forwards;
-          animation: fade-in 5s forwards, fade-out 5s 28s forwards;
+  -webkit-animation: fade-in 3s forwards, fade-out 3s 14s forwards;
+          animation: fade-in 3s forwards, fade-out 3s 14s forwards;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/img/header_mobile.jpg");
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/header_mobile.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/header_mobile.jpg");
@@ -251,8 +251,8 @@ p {
 }
 
 #header::after {
-  -webkit-animation: fade-in 5s 23s forwards;
-          animation: fade-in 5s 23s forwards;
+  -webkit-animation: fade-in 3s 11s forwards;
+          animation: fade-in 3s 11s forwards;
   background-image: url("/img/header_mobile.jpg");
   opacity: 0;
 }
@@ -264,8 +264,8 @@ p {
 }
 
 #header #name-title {
-  -webkit-animation: move-name-title 5s 12s forwards;
-          animation: move-name-title 5s 12s forwards;
+  -webkit-animation: move-name-title 3s 5.5s forwards;
+          animation: move-name-title 3s 5.5s forwards;
   left: 50%;
   padding: 2.5rem;
   position: absolute;
@@ -277,8 +277,8 @@ p {
 }
 
 #header #name-title h1 {
-  -webkit-animation: animated-text 4s steps(12, end) 2s 1 normal both, animated-cursor 600ms steps(12, end) 10 forwards;
-          animation: animated-text 4s steps(12, end) 2s 1 normal both, animated-cursor 600ms steps(12, end) 10 forwards;
+  -webkit-animation: animated-text 2s steps(12, end) 1s 1 normal both, animated-cursor 300ms steps(12, end) 8 forwards;
+          animation: animated-text 2s steps(12, end) 1s 1 normal both, animated-cursor 300ms steps(12, end) 8 forwards;
   color: #fff2cc;
   font-size: 2.9rem;
   overflow: hidden;
@@ -286,8 +286,8 @@ p {
 }
 
 #header #name-title h2 {
-  -webkit-animation: animated-text 4s steps(13, end) 6s 1 normal both, animated-cursor 600ms steps(13, end) 6s 10 forwards;
-          animation: animated-text 4s steps(13, end) 6s 1 normal both, animated-cursor 600ms steps(13, end) 6s 10 forwards;
+  -webkit-animation: animated-text 2s steps(13, end) 3s 1 normal both, animated-cursor 300ms steps(13, end) 3s 8 forwards;
+          animation: animated-text 2s steps(13, end) 3s 1 normal both, animated-cursor 300ms steps(13, end) 3s 8 forwards;
   color: #ffe699;
   font-size: 2.2rem;
   overflow: hidden;
@@ -296,8 +296,8 @@ p {
 
 /* navigation styling */
 #nav {
-  -webkit-animation: move-nav 6s 17s forwards;
-          animation: move-nav 6s 17s forwards;
+  -webkit-animation: move-nav 3s 8.5s forwards;
+          animation: move-nav 3s 8.5s forwards;
   left: 50%;
   opacity: 0;
   padding: 2.5rem;
