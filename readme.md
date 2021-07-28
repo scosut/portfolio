@@ -1,3 +1,5 @@
 # Portfolio
 
-This web page describes its author and the projects he developed. It also provides methods for contacting him regarding employment opportunities.
+Describes my journey in web development, showcases my work, and provides contact information. Built using HTML, CSS, SASS, JavaScript.
+
+[visit website](https://link-url-here.org)
