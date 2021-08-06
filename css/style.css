@@ -315,7 +315,7 @@ p {
 }
 
 #nav ul li {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 
@@ -333,7 +333,7 @@ p {
 
 /* about styling */
 #about {
-  background: #a9d18e;
+  background: rgba(169, 209, 142, 0.5);
   padding: 1.25rem;
   position: relative;
 }
@@ -578,7 +578,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #a9d18e;
+  background: rgba(169, 209, 142, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
